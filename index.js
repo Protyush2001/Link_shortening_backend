@@ -9,7 +9,7 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-const corsOption = {origin:"http://localhost:5174"}
+const corsOption = {origin:"*"}
 app.use(cors(corsOption));
 
 // MongoDB connection
